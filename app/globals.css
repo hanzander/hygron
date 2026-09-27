@@ -85,6 +85,18 @@ td { padding:12px 19px; border-bottom:1px solid #f0ece5; }
 .risk { border-radius:999px; padding:5px 9px; }
 .feature-card { box-shadow:0 4px 14px #263c3008; }
 .feature-card:hover { box-shadow:0 12px 24px #263c3015; }
+.feature-card { min-height:304px; padding:22px 24px 20px; }
+.feature-card-top { min-height:72px; align-items:flex-start; }
+.feature-icon { width:54px; height:54px; flex:0 0 54px; margin-top:0; margin-right:2px; }
+.feature-icon svg { width:26px; height:26px; }
+.feature-num { display:none; }
+.feature-card h3 { margin:18px 0 10px; max-width:245px; font-size:22px; line-height:1.12; }
+.feature-card p { max-width:292px; line-height:1.58; }
+.feature-card a { margin-top:18px; }
+.feature-swoop { right:-36px; bottom:-43px; }
+@media (max-width:900px) {
+  .feature-card { min-height:292px; }
+}
 @media (max-width:900px) { .sidebar { width:190px; flex-basis:190px; }.dash-header,.dash-content { padding-left:25px; padding-right:25px; } }
 .shell { width:min(1160px,calc(100% - 64px)); margin:0 auto; }
 .logo { font:700 25px/1 'Playfair Display',serif; letter-spacing:-1.2px; color:var(--ink); white-space:nowrap; }.logo span { color:var(--rust); }.logo-light { color:#f1eee7; }
