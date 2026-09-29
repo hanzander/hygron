@@ -81,9 +81,10 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
           <div className="button-row"><button className="button button-primary" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button><a className="button button-outline" href="#how-it-works">See how it works <span>↘</span></a></div>
         </div>
         <div className="hero-visual">
-          <div className="hero-note">
-            <span className="hero-note-line" />
-            <p>Room-level context for the people who keep a property moving.</p>
+          <div className="hero-brand-mark" aria-label="Hygron">
+            <div className="hero-brand-icon"><SignatureIcon kind="sensor" /></div>
+            <Logo />
+            <span>Room-level environmental monitoring</span>
           </div>
         </div>
       </section>
