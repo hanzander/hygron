@@ -84,7 +84,6 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
           <div className="hero-brand-mark" aria-label="Hygron">
             <div className="hero-brand-icon"><SignatureIcon kind="sensor" /></div>
             <Logo />
-            <span>Room-level environmental monitoring</span>
           </div>
         </div>
       </section>
