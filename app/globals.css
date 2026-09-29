@@ -186,3 +186,7 @@ td { padding:12px 19px; border-bottom:1px solid #f0ece5; }
   .feature-card { min-height:230px; }
   .feature-card-top { min-height:52px; }
 }
+
+/* dashboard preview v2 */
+.hero-dashboard-preview { box-sizing:border-box; isolation:isolate; overflow:hidden; }
+.hero-dashboard-preview * { box-sizing:border-box; }
