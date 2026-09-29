@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   ArrowRight,
   Bell,
-  Check,
   ChevronDown,
   CircleHelp,
   CloudRain,
@@ -82,13 +81,9 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
           <div className="button-row"><button className="button button-primary" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button><a className="button button-outline" href="#how-it-works">See how it works <span>↘</span></a></div>
         </div>
         <div className="hero-visual">
-          <div className="visual-glow" />
-          <div className="room-card">
-            <div className="card-top"><span className="small-label">LIVE ROOM STATUS</span><span className="live"><i /> Live</span></div>
-            <div className="room-title"><div><span className="room-kicker">ROOM 214</span><h3>Garden Wing</h3></div><div className="room-icon"><SignatureIcon kind="sensor" /></div></div>
-            <div className="status-row"><div className="status-check"><Check size={16} /></div><div><strong>Low risk</strong><span>No action needed</span></div><span className="status-time">2 min ago</span></div>
-            <div className="metric-grid"><div><span>Humidity</span><strong>59<span>%</span></strong><small className="good">↓ 3% today</small></div><div><span>Temperature</span><strong>24<span>°C</span></strong><small>Within range</small></div><div><span>Air quality</span><strong>Good</strong><small className="good">VOC 184 ppb</small></div><div><span>Last reading</span><strong>14:28</strong><small>Every 30 seconds</small></div></div>
-            <div className="mini-chart"><div className="chart-caption"><span>7 day humidity</span><b>59%</b></div><svg viewBox="0 0 380 72" preserveAspectRatio="none"><path d="M0 44 C28 42 31 25 58 30 S87 51 113 43 S143 29 167 38 S195 57 222 47 S249 32 276 37 S300 43 326 32 S351 19 380 23" fill="none" stroke="#4e8c7c" strokeWidth="2.5"/><line x1="0" y1="22" x2="380" y2="22" stroke="#d97748" strokeDasharray="5 5" opacity=".7"/></svg><div className="chart-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+          <div className="hero-note">
+            <span className="hero-note-line" />
+            <p>Room-level context for the people who keep a property moving.</p>
           </div>
         </div>
       </section>
