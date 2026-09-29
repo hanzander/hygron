@@ -212,6 +212,30 @@ td { padding:12px 19px; border-bottom:1px solid #f0ece5; }
 .hero-dashboard-preview { box-sizing:border-box; isolation:isolate; overflow:hidden; }
 .hero-dashboard-preview * { box-sizing:border-box; }
 
+.features-section { background:var(--ink); color:#f1eee7; }
+.features-section .features { padding-top:112px; padding-bottom:118px; }
+.features-section .section-intro h2 { color:#f1eee7; }
+.features-section .section-intro p { color:#93a198; }
+.features-section .eyebrow { color:#6fa58d; }
+.features-section .feature-grid { gap:12px; margin-top:52px; }
+.features-section .feature-card { min-height:270px; border-color:#2f3b35; background:#1b2520; box-shadow:none; }
+.features-section .feature-card:hover { border-color:#476354; box-shadow:0 14px 30px #00000026; }
+.features-section .feature-card:before { background:#4e8c7c; }
+.features-section .feature-card:nth-child(2):before { background:var(--rust); }
+.features-section .feature-card:nth-child(3):before { background:#7f9f90; }
+.features-section .feature-kicker { color:#77877e; }
+.features-section .feature-icon { color:#9bc8b4; background:#263b31; }
+.features-section .feature-card:nth-child(2) .feature-icon { color:#e39a78; background:#3a2d28; }
+.features-section .feature-card:nth-child(3) .feature-icon { color:#9ac9b8; background:#263b31; }
+.features-section .feature-card h3,.features-section .feature-card:nth-child(2) h3 { color:#f1eee7; }
+.features-section .feature-card p { color:#94a198; }
+.features-section .feature-swoop { border-color:#34483d; }
+.features-section .feature-card:nth-child(2) .feature-swoop { border-color:#5c3b31; }
+.features-section .feature-card:nth-child(3) .feature-swoop { border-color:#3b5449; }
+@media (max-width:600px) {
+  .features-section .features { padding-top:75px; padding-bottom:75px; }
+}
+
 .property-section { display:grid; grid-template-columns:1fr 1fr; gap:80px; padding:112px 0; }
 .property-copy h2 { max-width:500px; margin:16px 0; color:#24382d; font:600 45px/1.1 'Playfair Display',serif; letter-spacing:-1.5px; }
 .property-copy p { max-width:515px; color:#718078; font-size:14px; line-height:1.75; }
