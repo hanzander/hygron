@@ -81,9 +81,15 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
           <div className="button-row"><button className="button button-primary" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button><a className="button button-outline" href="#how-it-works">See how it works <span>↘</span></a></div>
         </div>
         <div className="hero-visual">
-          <div className="hero-brand-mark" aria-label="Hygron">
-            <div className="hero-brand-icon"><SignatureIcon kind="sensor" /></div>
-            <Logo />
+          <div className="hero-dashboard-preview" aria-label="Hygron dashboard preview">
+            <div className="preview-head"><div><span>TAGAYTAY BRANCH</span><strong>Room risk</strong></div><span className="preview-live"><i /> Live</span></div>
+            <div className="preview-summary"><div><small>Rooms monitored</small><b>42</b></div><div className="preview-alert"><small>Needs attention</small><b>3 rooms</b></div></div>
+            <div className="preview-section-label">CHECK FIRST</div>
+            <div className="preview-room high"><span className="preview-room-dot" /><div><strong>Room 118</strong><small>Humidity 78% · rising</small></div><b>High</b></div>
+            <div className="preview-room medium"><span className="preview-room-dot" /><div><strong>Room 203</strong><small>VOC 488 ppb · rising</small></div><b>Watch</b></div>
+            <div className="preview-section-label">ROOM 118 · LAST 7 DAYS</div>
+            <div className="preview-chart"><span className="preview-threshold">65% threshold</span><svg viewBox="0 0 360 74" preserveAspectRatio="none"><path d="M0 53 C30 48 42 42 70 47 S108 58 137 43 S176 39 205 45 S241 28 270 34 S315 21 360 25" fill="none" stroke="#d97748" strokeWidth="2.5" /></svg></div>
+            <div className="preview-footer"><span><SignatureIcon kind="action" /> Staff notification ready</span><span>2 min ago</span></div>
           </div>
         </div>
       </section>
