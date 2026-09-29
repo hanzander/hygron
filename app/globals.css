@@ -9,10 +9,6 @@ button,a { font:inherit; } button { cursor:pointer; } a { color:inherit; text-de
 .landing,.auth-page,.dashboard { animation:pageIn .6s ease-out both; }
 .hero-copy { animation:fadeUp .8s .08s ease-out both; }
 .hero-copy { position:relative; }
-.hero-stamp { position:absolute; top:-28px; right:12%; width:92px; height:92px; display:flex; flex-direction:column; justify-content:center; align-items:center; border:1px solid #c9a083; border-radius:50%; color:#a26043; transform:rotate(8deg); font-size:8px; letter-spacing:.7px; text-align:center; }
-.hero-stamp:before { content:""; position:absolute; inset:5px; border:1px dashed #d3ad92; border-radius:50%; }
-.hero-stamp span { max-width:55px; line-height:1.25; }
-.hero-stamp b { margin-top:5px; font:600 15px 'Playfair Display',serif; }
 .hero-visual { animation:fadeUp .9s .2s ease-out both; }
 .hero-visual .room-card { animation:cardFloat 6s ease-in-out infinite; }
 .visual-glow { animation:glowPulse 5s ease-in-out infinite; }
