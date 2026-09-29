@@ -17,7 +17,6 @@ import {
   Search,
   Settings,
   ShieldCheck,
-  Wind,
 } from "lucide-react";
 import {
   ActivityIcon,
@@ -81,7 +80,6 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
           <h1>Know a room&apos;s mold risk <em>before</em> your guest does.</h1>
           <p className="hero-sub">Hygron keeps a quiet watch on humidity, temperature, air quality, and ventilation across your property. When a room starts to drift, your team knows where to look and why.</p>
           <div className="button-row"><button className="button button-primary" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button><a className="button button-outline" href="#how-it-works">See how it works <span>↘</span></a></div>
-          <div className="hero-proof"><div className="avatar-stack"><i>J</i><i>M</i><i>A</i></div><span><strong>Built for properties like yours.</strong><br />Trusted by hotel teams across the Philippines.</span></div>
         </div>
         <div className="hero-visual">
           <div className="visual-glow" />
@@ -92,14 +90,11 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
             <div className="metric-grid"><div><span>Humidity</span><strong>59<span>%</span></strong><small className="good">↓ 3% today</small></div><div><span>Temperature</span><strong>24<span>°C</span></strong><small>Within range</small></div><div><span>Air quality</span><strong>Good</strong><small className="good">VOC 184 ppb</small></div><div><span>Last reading</span><strong>14:28</strong><small>Every 30 seconds</small></div></div>
             <div className="mini-chart"><div className="chart-caption"><span>7 day humidity</span><b>59%</b></div><svg viewBox="0 0 380 72" preserveAspectRatio="none"><path d="M0 44 C28 42 31 25 58 30 S87 51 113 43 S143 29 167 38 S195 57 222 47 S249 32 276 37 S300 43 326 32 S351 19 380 23" fill="none" stroke="#4e8c7c" strokeWidth="2.5"/><line x1="0" y1="22" x2="380" y2="22" stroke="#d97748" strokeDasharray="5 5" opacity=".7"/></svg><div className="chart-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
           </div>
-          <div className="float-note"><span className="pulse"><Wind size={15} /></span><div><strong>42 rooms monitored</strong><small>Across 1 property</small></div></div>
         </div>
       </section>
-
-      <section className="marquee"><div className="shell marquee-inner"><span>ROOM BY ROOM</span><i>✦</i><span>MADE FOR WET SEASONS</span><i>✦</i><span>LESS GUESSWORK</span><i>✦</i><span>BUILT WITH HOTEL TEAMS</span><i>✦</i></div></section>
-      <section className="features shell" id="product"><div className="section-intro"><span className="eyebrow">WHY TEAMS KEEP HYGRON OPEN</span><h2>Built for humid climates,<br /><em>and busy mornings.</em></h2></div><div className="feature-grid"><Feature icon={<SignatureIcon kind="sensor" />} title="See the rooms that need you" text="Humidity, temperature, VOCs, CO₂, and particulates are tracked quietly in the background, room by room." num="01" /><Feature icon={<SignatureIcon kind="forecast" />} title="Catch the drift early" text="Hygron notices when a room is moving toward mold-friendly conditions, before it becomes a guest-facing problem." num="02" /><Feature icon={<SignatureIcon kind="staff" />} title="Give the next shift a head start" text="Housekeeping and maintenance see a room, a reason, and a sensible next step, not a data dump." num="03" /></div></section>
-      <section className="how-section" id="how-it-works"><div className="shell"><div className="section-intro centered"><span className="eyebrow">A SIMPLE LOOP</span><h2>How it works</h2><p>From sensor to staff notification.</p></div><div className="steps"><Step n="01" title="Sense" text="In-room sensors read the air every 30 seconds." icon={<SignatureIcon kind="air" />} /><Step n="02" title="Preprocess" text="An on-site gateway cleans and summarizes the data." icon={<SignatureIcon kind="clean" />} /><Step n="03" title="Predict" text="The model scores each room&apos;s mold risk in real time." icon={<SignatureIcon kind="signal" />} /><Step n="04" title="Act" text="Staff get a dashboard view and an alert for high-risk rooms." icon={<SignatureIcon kind="action" />} /></div></div></section>
-      <section className="cta-section shell" id="pricing"><div><span className="eyebrow light-eyebrow">SEE THE SIGNAL</span><h2>Protect your guests and your rooms from a problem you can&apos;t always see.</h2></div><button className="button button-cream" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button></section>
+      <section className="features shell" id="product"><div className="section-intro"><span className="eyebrow">ROOMS, NOT SPREADSHEETS</span><h2>Built for humid climates,<br /><em>and busy mornings.</em></h2></div><div className="feature-grid"><Feature icon={<SignatureIcon kind="sensor" />} title="See which rooms need attention" text="Humidity, temperature, VOCs, CO₂, and particulates are tracked quietly in the background, room by room." num="01" /><Feature icon={<SignatureIcon kind="forecast" />} title="Spot rising humidity early" text="Hygron flags rooms moving toward mold-friendly conditions before the issue reaches a guest." num="02" /><Feature icon={<SignatureIcon kind="staff" />} title="Give the next shift a clear next step" text="Housekeeping and maintenance see the room, the reason, and what to check next." num="03" /></div></section>
+      <section className="how-section" id="how-it-works"><div className="shell"><div className="section-intro centered"><h2>How it works</h2><p>From sensor to staff notification.</p></div><div className="steps"><Step n="01" title="Sense" text="In-room sensors read the air every 30 seconds." icon={<SignatureIcon kind="air" />} /><Step n="02" title="Preprocess" text="An on-site gateway cleans and summarizes the data." icon={<SignatureIcon kind="clean" />} /><Step n="03" title="Predict" text="The model scores each room&apos;s mold risk in real time." icon={<SignatureIcon kind="signal" />} /><Step n="04" title="Act" text="Staff get a dashboard view and an alert for high-risk rooms." icon={<SignatureIcon kind="action" />} /></div></div></section>
+      <section className="cta-section shell" id="pricing"><div><h2>Protect your guests and your rooms from a problem you can&apos;t always see.</h2></div><button className="button button-cream" onClick={() => onNavigate("signin")}>Request a demo <ArrowRight size={17} /></button></section>
       <footer className="site-footer shell" id="contact"><Logo /><span>Hygron, environmental monitoring for lodging properties</span><span className="footer-place">Manila, Philippines <span>↗</span></span></footer>
     </main>
   );
@@ -107,7 +102,7 @@ function Landing({ onNavigate }: { onNavigate: (view: View) => void }) {
 
 function Feature({ icon, title, text, num }: { icon: React.ReactNode; title: string; text: string; num: string }) {
   const labels: Record<string, string> = { "01": "WATCH", "02": "FORECAST", "03": "RESPOND" };
-  return <article className="feature-card"><div className="feature-card-top"><span className="feature-kicker">{num} / {labels[num]}</span><div className="feature-icon">{icon}</div></div><span className="feature-num">{num}</span><h3>{title}</h3><p>{text}</p><a href="#how-it-works">Explore this layer <ArrowRight size={14} /></a><span className="feature-swoop" aria-hidden="true" /></article>;
+  return <article className="feature-card"><div className="feature-card-top"><span className="feature-kicker">{num} / {labels[num]}</span><div className="feature-icon">{icon}</div></div><span className="feature-num">{num}</span><h3>{title}</h3><p>{text}</p><span className="feature-swoop" aria-hidden="true" /></article>;
 }
 function Step({ n, title, text, icon }: { n: string; title: string; text: string; icon: React.ReactNode }) {
   return <article className="step"><span className="step-num">{n}</span><div className="step-icon">{icon}</div><h3>{title}</h3><p>{text}</p></article>;
