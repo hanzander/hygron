@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hygron, environmental intelligence for lodging",
+  title: "Hygron",
   description: "Know a room's mold risk before your guest does.",
 };
 
